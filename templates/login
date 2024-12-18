@@ -32,8 +32,11 @@
                                 <input type="email" style="box-shadow: none;" class="form-control bg-transparent border-0" id="inputEmail" name="email" placeholder="Enter your email" required>
                             </div>
                         </div>
+                        <div class="error-msg col-12 text-start">
+                            <p class="text-danger">{{ error }}</p>
+                        </div>
                         <div class="col-12 text-start">
-                            <label for="inputPassword" class="form-label mx-2">Password</label>
+                            <label for="inputPassword" class="form-label mx-2" >Password</label>
                             <div class="input-group border-1 rounded-pill bg-light">
                                 <div class="input-group-text bg-transparent border-0" id="password-addon"><img src="../static/img/lock.png" width="20" height="20"></div>
                                 <input type="password" style="box-shadow: none;" class="form-control bg-transparent border-0" id="inputPassword" name="password" placeholder="Enter your password" required>
