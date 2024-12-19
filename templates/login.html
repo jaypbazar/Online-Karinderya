@@ -13,7 +13,7 @@
 {% block content %}
     <div class="screen_cover"></div>
     <div class="d-flex justify-content-center">
-        <div class="container bg-body-secondary text-center p-3 m-5 rounded-5 mw-100" style="--bs-bg-opacity: .4; width: 30rem;">
+        <div class="container bg-body-secondary text-center p-3 m-5 rounded-5 mw-100" style="--bs-bg-opacity: .3; width: 30rem;">
             <a class="text-decoration-none" href="/">
                 <h4 style="font-family: Arial Black;" class="p-3">
                     <img src="../static/img/logo.png" width="35" height="35"><span style="color: #088C77;">nline </span>
@@ -21,11 +21,11 @@
                 </h4>
             </a>
             <div class="text-light px-5">
-                <h3>Sign Up</h3>
-                <p>Get started with our app, just create an account and enjoy the experience.</p>
+                <h3>Sign In</h3>
+                <p>You can pre-order your favorite food, just sign in and enjoy the experience.</p>
                 <form action="/login" method="post">
                     <div class="row g-3">
-                        <div class="col-12 text-start">
+                        <div class="col-12 text-start py-3">
                             <label for="inputEmail" class="form-label mx-2">Email</label>
                             <div class="input-group border-1 rounded-pill bg-light">
                                 <div class="input-group-text bg-transparent border-0" id="email-addon"><img src="../static/img/email.png" width="20" height="20"></div>
@@ -42,17 +42,10 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-12 pt-3">
-                            <button class="btn text-light rounded-pill w-100" style="background-color: #088C77;" type="submit">Sign Up</button>
+                        <div class="col-12 py-4">
+                            <button class="btn text-light fw-bold rounded-pill w-100" style="background-color: #088C77;" type="submit">Log in</button>
                         </div>
-                        <div class="col-12 pt-3">
-                            <p>Or Sign in with</p>
-                            <div class="d-flex justify-content-center">
-                                <a href="#" class="mx-2"><img src="../static/img/google.png" width="40" height="40" alt="Google"></a>
-                                <a href="#" class="mx-2"><img src="../static/img/facebook.png" width="40" height="40" alt="Facebook"></a>
-                                <a href="#" class="mx-2"><img src="../static/img/github.png" width="40" height="40" alt="GitHub"></a>
-                            </div>
-                        </div>
+                        <p class="text-center">No account yet? <a href="/signup" style="color: aquamarine;">Create Account</a></p>
                     </div>
                 </form>
             </div>
